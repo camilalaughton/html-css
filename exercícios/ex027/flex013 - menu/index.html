@@ -4,30 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 570px)">
     <style>
 
         * {
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 1em;
+            height: 100vh;
+            width: 100vw;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         }
 
         header {
-            background-color: rgb(159, 157, 157);
+            padding: 20px;
+            background-color: rgb(156, 154, 154);
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header > h1 {
+            padding-bottom: 10px;
+            flex: 0 0 200px;
             
         }
+
+        header li {
+            list-style-type: none;
+            
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+        }
+
+        ul {
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
+            flex-wrap: wrap;
+        }
+
+        li {
+            background-color: rgb(56, 51, 51);
+            color: white;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 3px;
+
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+
+        }
+
+        li > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li:hover {
+            background-color: rgb(212, 197, 177);
+            transition: background-color .5s;
+        }
+
+        main {
+            background-color: lightgray;
+            border-radius: 7px;
+            margin: 7px;
+        }
+
+
+        main > h2 {
+            padding: 20px;
+        }
+
+        main p {
+            text-indent: 10px;
+            text-align: justify;
+            padding: 13px;
+        }
+
+
+    
     </style>
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
         <ul>
-            <li>Opção 1</li>
-            <li>Opção 2</li>
-            <li>Opção 3</li>
-            <li>Opção 4</li>
-            <li>Opção 5</li>
-            <li>Opção 6</li>
-        </ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+            <li><a href="#">Opção 6</a></li>
+        </ul> 
     </header>
     <main>
         <h2>Teste de Flexbox</h2>
