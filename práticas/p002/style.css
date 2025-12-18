@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* 
+--laranja: #F77901;
+--preto: #000000;
+--branco: #FFFFFF;
+*/
+
+* {
+    margin: 0PX;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    
+}
+
+header {
+    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+p.topo {
+    background-image: linear-gradient(to left, #FC9E02, #F77901, #E36D01); 
+    padding: 15px;
+    text-align: center;
+}
+
+div.banner {
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid #F77901;
+    border-radius: 7px;
+}
+
+
+h1.principal, p.sim, p.texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    
+}
+
+
+
+h1.principal {
+    font-size: 30px;
+    color: #F77901;
+    top:22%
+}
+
+p.sim {
+    top: 30%;
+    font-size: 70px;
+    font-weight: bold;
+    
+}
+
+p.texto {
+
+}
+
+div.banner p {
+    text-transform: uppercase;
+}
+
+div.banner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    overflow: hidden; 
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+nav h2 {
+    color: #F77901;
+    font-size: 17px;
+}
+
+i.fa-solid {
+    color: #FFFFFF;
+    font-size: 20px;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 80vw;
+    margin: 20px;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 20vw;
+}
