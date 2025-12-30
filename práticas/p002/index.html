@@ -3,49 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Site</title>
+    <title>Método MC</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
-<body>
+<body> 
+        <!-- Barra laranja do topo -->
     <header>
-        <div class="banner">
-            <h1 class="principal">Método MC</h1>
-            <p class="sim">SIM</p>
-            <p class="texto">QUERO ENCANTAR <br> COM RAPIDEZ, <br> PRATICIDADE E <br>LUCRATIVIDADE</p>
-            <img src="imagem-chatgpt.png" alt="Homem sorrindo">
-        </div>
+        <div class="timer">14:56</div>
+         <p class="topo"> <i class="fa-solid fa-clock"></i> Faça parte do melhor curso de Escape do Brasil!</p>
+
+    </header> 
+
+        <!-- Seção Hero com o professor --> 
+        
+        <section class="hero">
+            <div class="hero-content">
+                <div class="logo"> 
+                    <span class="logo-icon"><i class="fa-solid fa-diamond" style="color: #f08c00;"></i></span>
+                    <span class="logo-text">Método MC</span>
+                </div>
+
+                <div class="hero-message">
+                    <h1 class="sim">SIM</h1>
+                    <p class="hero-description">
+                        QUERO ENCANTAR <br> COM RAPIDEZ, <br> PRATICIDADE E <br>
+                        <span class="lucrati">LUCRATIVIDADE</span>
+                    </p>
+                </div>
 
 
-        <p class="topo"> <i class="fa-solid fa-clock"></i> Faça parte do melhor curso de Escape do Brasil!</p>
-    </header>
+                <div class="imagem">
+                <img src="imagem-chatgpt.png" alt="Homem sorrindo">
+                </div>
+                
+            </div>
+        </section>
 
-    <nav>
-        <h2>GARANTA SUA VAGA <i class="fa-solid fa-down-long"></i></h2>
+
+
+        <!-- Container principal com formulário e bônus -->
+        <main>
+            <!-- Seção do Formulário -->
+            <section class="form-section">
+                <h2 class="section-title">GARANTA SUA VAGA <i class="fa-solid fa-down-long"></i>
+                </h2>
+
+                <form>
+                <div class="form-group">
+                    <label for="inome">Nome Completo</label>
+                    <input type="text" name="nome" id="inome" required>
+                </div>
+
+
+
+                
+                </form>
+            </section>
+        </main>
+
+
+   
         <h2>BÔNUS EXCLUSIVOS <i class="fa-solid fa-down-long"></i></h2>
     </nav>
 
     <main>
-        <form action="cadastro.php" autocomplete="on">
+        <form action="cadastro.php" autocomplete="on" method="post">
             
             <p><label for="inome">Nome Completo</label>
                 <input type="text" name="nome" id="inome"></p>
 
-            <p><label for="inome">Email</label>
-                <input type="text" name="nome" id="inome"></p>
+            <p><label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail"></p>
 
-            <p><label for="inome">Confirmar email</label>
-                <input type="text" name="nome" id="inome"></p>
+            <p><label for="iconf">Confirmar email</label>
+                <input type="email" name="conf" id="iconf"></p>
 
-            <p><label for="inome">CPF</label>
-                <input type="text" name="nome" id="inome"></p> 
+            <p><label for="icpf">CPF</label>
+                <input type="text" name="cpf" id="icpf"></p> 
 
-            <p><label for="inome">Celular com DDD</label>
-                <input type="text" name="nome" id="inome"></p>
+            <p><label for="icelular">Celular com DDD</label>
+                <input type="text" name="celular" id="icelular"></p>
 
-            <p><input type="submit" value="PAGAR AGORA"></p>
+            <div class="forma-pagamento">
+                
+            </div>
+
+            <p><input type="submit" value="PAGAR AGORA"></p> 
         </form>
+
+        div 
     </main>
     
     <aside>
