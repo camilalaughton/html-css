@@ -56,59 +56,172 @@
                     <input type="text" name="nome" id="inome" required>
                 </div>
 
+                <div class="form-group">
+                    <label for="iemail">Confirmar email</label>
+                    <input type="email" name="email" id="iemail" required>
+                </div>
 
-
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="icpf">CPF</label>
+                        <input type="text" name="cpf" id="icpf" required placeholder="000.000.000-00">
+                    </div>
+                    <div class="form-group">
+                        <label for="icelular">Celular com DDD</label>
+                        <input type="tel" name="celular" id="icelular" required>
+                    </div>
+                </div>
                 
-                </form>
-            </section>
-        </main>
+
+                <div class="pagamento">
+                    <button type="button" class="btn-cartao">
+                        💳 Cartão
+                    </button>
+                    <button type="button" class="btn-boleto">
+                        🏦 Boleto
+                    </button>
+                    <button type="button" class="btn-pix">
+                       🔶 PIX
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <label for="numero-cartao">Número do Cartão de Crédito</label>
+                    <input type="text" name="numero-cartao" id="numero-cartao"
+                    placeholder="0000 0000 0000 0000" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group small">
+                        <label for="mes">Mês</label>
+                        <input type="text" id="mes" name="mes" placeholder="MM" required>
+                    </div>
+                    <div class="form-group small">
+                        <label for="ano">Ano</label>
+                        <input type="text" id="ano" name="ano" placeholder="AA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">Cód. segurança</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                    </div>
+                </div>
+
+                 <div class="price-display">
+                    <span class="price-label">Total:</span>
+                    <span class="price-value">R$ 2.499,00</span>
+                    <span class="installments">ou 12x de R$ 249,90</span>
+                </div>
+
+                 <div class="form-checkboxes">
+                    <label class="checkbox-label">
+                        <input type="checkbox" required>
+                        <span>Salvar dados para as próximas compras</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" required>
+                        <span>Li e concordo com todos os termos de segurança, estando ciente que posso solicitar o reembolso em até 7 dias.</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span>Eu autorizo automaticamente fazer minha MATRÍCULA/RENOVAÇÃO</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Finalizar compra
+                </button>
+
+                <div class="security-badges">
+                    <p>🔒 Compra 100% segura</p>
+                    <p class="small-text">Todos os seus dados estão protegidos pela tecnologia SSL (Secure Socket Layer), que garante a transmissão de dados de forma segura.</p>
+                </div>
+            </form>
+        </section>
+
+          <!-- Seção de Bônus -->
+           
+        <aside class="bonus-section">
+            <h2 class="section-title white">
+                BÔNUS EXCLUSIVOS <span class="arrow">⬇</span>
+            </h2>
+            <h3 class="bonus-subtitle">VOCÊ VAI RECEBER</h3>
+
+            <div class="bonus-list">
+                <div class="bonus-item">
+                    <span class="bonus-icon">🚀</span>
+                    <div class="bonus-text">
+                        <strong>MÉTODO MC</strong><br>
+                        COMPLETO
+                    </div>
+                </div>
+
+                <div class="bonus-item">
+                    <span class="bonus-icon">🎯</span>
+                    <div class="bonus-text">
+                        <strong>TOUR VIRTUAL</strong>
+                    </div>
+                </div>
+
+                <div class="bonus-item highlight-box">
+                    <span class="bonus-icon">📱</span>
+                    <div class="bonus-text">
+                        <strong>SUPORTE DIÁRIO</strong><br>
+                        NO WHATSAPP
+                    </div>
+                </div>
+
+                <div class="bonus-item image-box">
+                    <div class="bonus-image">
+                        <p>💻 BÔNUS CURSO<br>DE WORKSHOP</p>
+                    </div>
+                </div>
+
+                <div class="bonus-item image-box">
+                    <div class="bonus-image">
+                        <p>📱 BÔNUS<br>TÉCNICAS DE<br>BLOGS</p>
+                    </div>
+                </div>
+
+                <div class="bonus-item arrow-item">
+                    <span class="arrow-icon">▶</span>
+                    <div class="bonus-text">
+                        <strong>BÔNUS APOSTILA<br>DE APOIO</strong>
+                    </div>
+                </div>
+
+                <div class="bonus-item arrow-item">
+                    <span class="arrow-icon">▶</span>
+                    <div class="bonus-text">
+                        <strong>PRECIFICAÇÃO E<br>POSICIONAMENTO<br>DE MERCADO 3D</strong>
+                    </div>
+                </div>
+
+                <div class="bonus-item arrow-item">
+                    <span class="arrow-icon">▶</span>
+                    <div class="bonus-text">
+                        <strong>ACESSO AO GRUPO<br>EXCLUSIVO DE<br>ALUNOS</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guarantee-badge">
+                <div class="badge-circle">
+                    <div class="badge-text">
+                        <strong>GARANTIA DE</strong>
+                        <div class="days">7 DIAS</div>
+                        <strong>INCONDICIONAL</strong>
+                    </div>
+                </div>
+                <div class="ribbon"></div>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
+
+
+           
+        
 
 
    
-        <h2>BÔNUS EXCLUSIVOS <i class="fa-solid fa-down-long"></i></h2>
-    </nav>
-
-    <main>
-        <form action="cadastro.php" autocomplete="on" method="post">
-            
-            <p><label for="inome">Nome Completo</label>
-                <input type="text" name="nome" id="inome"></p>
-
-            <p><label for="iemail">Email</label>
-                <input type="email" name="email" id="iemail"></p>
-
-            <p><label for="iconf">Confirmar email</label>
-                <input type="email" name="conf" id="iconf"></p>
-
-            <p><label for="icpf">CPF</label>
-                <input type="text" name="cpf" id="icpf"></p> 
-
-            <p><label for="icelular">Celular com DDD</label>
-                <input type="text" name="celular" id="icelular"></p>
-
-            <div class="forma-pagamento">
-                
-            </div>
-
-            <p><input type="submit" value="PAGAR AGORA"></p> 
-        </form>
-
-        div 
-    </main>
-    
-    <aside>
-        <h3>VOCÊ VAI RECEBER</h3>
-        <p>MÉTODO MC COMPLETO</p>
-        <P>TOUR VIRTUAL</P>
-        <p><a href="#">SUPORTE DIÁRIO NO WHATSAPP</a></p>
-
-        <ul>
-            <li>BÔNUS APOSTILA DE APOIO</li>
-            <li>PRECIFICAÇÃO E POSICIONAMENTO DE MERCADO 3D</li>
-            <li>ACESSO AO GRUPO EXCLUSIVO DE ALUNOS</li>
-        </ul>
-
-    </aside>
-    
-</body>
-</html>
