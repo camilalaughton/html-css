@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/* 
---laranja: #F77901;
---preto: #000000;
---branco: #FFFFFF;
-*/
-
 * {
     margin: 0PX;
     padding: 0px;
@@ -19,86 +13,461 @@ body {
     
 }
 
+/* Barra laranja no topo */ 
 header {
-    margin: 10px;
-    display: flex;
-    flex-direction: column-reverse;
+  background: linear-gradient(90deg, #ff8c00, #ff6600);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 p.topo {
-    background-image: linear-gradient(to left, #FC9E02, #F77901, #E36D01); 
-    padding: 15px;
-    text-align: center;
+    font-size: 16px;
 }
 
-div.banner {
-    padding: 10px;
-    margin: 20px;
-    position: relative;
-    border: 1px solid #F77901;
-    border-radius: 7px;
-}
-
-
-h1.principal, p.sim, p.texto {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    
-}
-
-
-
-h1.principal {
-    font-size: 30px;
-    color: #F77901;
-    top:22%
-}
-
-p.sim {
-    top: 30%;
-    font-size: 70px;
+.timer {
+    font-size: 24px;
     font-weight: bold;
-    
 }
 
 
-div.banner p {
-    text-transform: uppercase;
+/* Seção Hero */
+.hero {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 30, 0, 0.6));
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 300px;
+  border: 3px solid #ff6600;
+  margin: 20px;
+  border-radius: 10px;
 }
 
-div.banner img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: contain;
-    overflow: hidden; 
+.hero-content {
+  flex: 1;
+  min-width: 300px;
 }
 
-nav {
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  font-size: 32px;
+  color: #ff6600;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.hero-message {
+  margin-top: 20px;
+}
+
+.sim {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.lucrati {
+  color: #ff6600;
+}
+
+.imagem {
+    flex: 1;
     display: flex;
-    flex-flow: row nowrap;
-    gap: 100px;
     justify-content: center;
+    align-items: center;
 }
 
-nav h2 {
-    color: #F77901;
-    font-size: 17px;
-}
 
-i.fa-solid {
-    color: #FFFFFF;
-    font-size: 20px;
-
-}
-
+/* Container principal */
 main {
-    display: grid;
-    grid-template-columns: 80vw;
-    margin: 20px;
+  display: flex;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-aside {
-    display: grid;
-    grid-template-columns: 20vw;
+/* Seção do formulário */
+.form-section {
+  flex: 1;
+  min-width: 350px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
 }
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.section-title.white {
+  color: #fff;
+}
+
+.arrow {
+  color: #ff6600;
+} 
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff6600;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-row .form-group.small {
+  flex: 0.5;
+}
+
+/* Métodos de pagamento */
+.pagamento {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.btn-pagamento {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-pagamento:hover {
+  border-color: #ff6600;
+}
+
+/* Métodos de pagamento */
+.payment-methods {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.payment-btn {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.payment-btn:hover {
+  border-color: #ff6600;
+}
+
+.payment-btn.active {
+  border-color: #00cc66;
+  background: #e6fff2;
+  color: #00cc66;
+  font-weight: bold;
+}
+
+
+/* Exibição de preço */
+.price-display {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.price-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.price-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+.installments {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Checkboxes */
+.form-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkbox-label {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+/* Botão de submit */
+.submit-btn {
+  background: linear-gradient(90deg, #00ff00, #00cc00);
+  color: #fff;
+  padding: 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Badges de segurança */
+.security-badges {
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+.security-badges p {
+  margin: 10px 0;
+}
+
+.small-text {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* Seção de bônus */
+.bonus-section {
+  flex: 0 0 400px;
+  min-width: 350px;
+}
+
+.bonus-subtitle {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.bonus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bonus-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ff6600;
+}
+
+.bonus-item.highlight-box {
+  background: #ff8c00;
+  border: none;
+}
+
+.bonus-item.image-box {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #333;
+}
+
+.bonus-item.arrow-item {
+  background: transparent;
+  border: none;
+  padding: 10px 0;
+}
+
+.bonus-icon {
+  font-size: 32px;
+}
+
+.arrow-icon {
+  color: #ff6600;
+  font-size: 20px;
+}
+
+.bonus-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.bonus-text strong {
+  font-size: 15px;
+}
+
+.bonus-image {
+  width: 100%;
+  background: rgba(50, 50, 50, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Badge de garantia */
+.guarantee-badge {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge-circle {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #ff6600, #cc5500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid #ffaa44;
+  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.5);
+  position: relative;
+}
+
+.badge-text {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.badge-text strong {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.days {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.ribbon {
+  width: 80px;
+  height: 100px;
+  background: linear-gradient(180deg, #ff6600, #cc5500);
+  position: relative;
+  margin-top: -30px;
+}
+
+.ribbon::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 30px solid #cc5500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .form-section,
+  .bonus-section {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sim {
+    font-size: 48px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+
+
