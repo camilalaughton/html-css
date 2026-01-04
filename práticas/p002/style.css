@@ -26,6 +26,7 @@ header {
 
 p.topo {
     font-size: 16px;
+    font-weight: bold;
 }
 
 .timer {
@@ -33,25 +34,32 @@ p.topo {
     font-weight: bold;
 }
 
+.fa-clock {
+  font-size: 24px;
+}
 
 /* Seção Hero */
 .hero {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(50, 30, 0, 0.6));
-  padding: 40px 20px;
+  width: 80%;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-  min-height: 300px;
+  justify-content: center;
+  
+
+  
   border: 3px solid #ff6600;
-  margin: 20px;
+  margin: 40px;
   border-radius: 10px;
 }
 
 .hero-content {
-  flex: 1;
-  min-width: 300px;
+  
+  display: flex; 
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+
 }
 
 .logo {
@@ -64,16 +72,19 @@ p.topo {
 .logo-icon {
   font-size: 32px;
   color: #ff6600;
+  margin-top: 30px;
 }
 
 .logo-text {
   font-size: 28px;
   font-weight: bold;
   color: #ff6600;
+  margin-top: 30px;
 }
 
 .hero-message {
   margin-top: 20px;
+  
 }
 
 .sim {
@@ -87,6 +98,7 @@ p.topo {
   font-size: 18px;
   line-height: 1.4;
   font-weight: bold;
+  
 }
 
 .lucrati {
@@ -94,10 +106,7 @@ p.topo {
 }
 
 .imagem {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
 }
 
 
@@ -203,13 +212,13 @@ main {
 }
 
 /* Métodos de pagamento */
-.payment-methods {
+.pagamento {
   display: flex;
   gap: 10px;
   margin: 10px 0;
 }
 
-.payment-btn {
+.btn-pagamento {
   flex: 1;
   padding: 12px;
   border: 2px solid #ddd;
@@ -220,11 +229,11 @@ main {
   transition: all 0.3s;
 }
 
-.payment-btn:hover {
+.btn-pagamento:hover {
   border-color: #ff6600;
 }
 
-.payment-btn.active {
+.btn-pagamento.active {
   border-color: #00cc66;
   background: #e6fff2;
   color: #00cc66;
