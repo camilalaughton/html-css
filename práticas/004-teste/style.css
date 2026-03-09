@@ -3,11 +3,16 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
+:root {
+    --nav: 
+}
+
+
 body{
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: 'Inter', Arial, Helvetica, sans-serif;  
     font-size: 10px;
     text-align: center;
     min-height: 100vh; /*sem essa altura total da janela voce não consegue alinhar os elementos no centro da tela, por exemplo*/ 
@@ -16,31 +21,40 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
 }
 
-div.pai {
+/* O main agora controla o layout dos cards */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article.card {
     box-shadow: 10px 10px 10px rgba(20, 5, 5, 0.304);
-    border-radius: 10px; /* border-radius e overflow: hidden, */
-    overflow: hidden;
+    border-radius: 10px; /* usado aqui para arredondar os vértices do conteiner de uma vez só */
+    overflow: hidden; /* Tudo o que passar do tamanho do contêiner é invisível. */
     margin: 10px;
   
-    transition: transform 0.3s ease; /*  */
+    transition: transform 0.3s ease; /* transição de 0.3 segundos */
 }
 
 img {
-    /*  */
-    width: 210px;
-    object-fit: cover;
-   
+    /* evita que a imagem seja distorcida, melhor do que max-width e max-height */
+   /* width: 180px;
+    object-fit: cover;*/
+
+    width: 100%;       /* Ocupa toda a largura do card */
+    height: 150px;     /* Força todas a terem a mesma altura */
+    object-fit: cover; /* Faz o corte inteligente para não distorcer */
+    display: block;
 }
 
 h1{
     padding: 10px;
     padding-bottom: 5px;
-    
 }
 
 h2 {
@@ -51,7 +65,6 @@ h2 {
 span {
     font-size: 17px;
     display: block;
-    
 }
 
 button {
@@ -69,9 +82,8 @@ button {
 button:hover {
     cursor: pointer;
     background-color: rgba(19, 126, 232, 0.74);
-    
 }
 
-.pai:hover {
-    transform: translateY(-5px); /**/ 
+article.card:hover {
+    transform: translateY(-5px); /* O card "sobe" 5 pixels */ 
 }
