@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 10px;
+    text-align: center;
+    min-height: 100vh; /*sem essa altura total da janela voce não consegue alinhar os elementos no centro da tela, por exemplo*/ 
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+div.pai {
+    box-shadow: 10px 10px 10px rgba(20, 5, 5, 0.304);
+    border-radius: 10px; /* border-radius e overflow: hidden, */
+    overflow: hidden;
+    margin: 10px;
+  
+    transition: transform 0.3s ease; /*  */
+}
+
+img {
+    /*  */
+    width: 210px;
+    object-fit: cover;
+   
+}
+
+h1{
+    padding: 10px;
+    padding-bottom: 5px;
+    
+}
+
+h2 {
+    color: rgb(168, 161, 161);
+    padding-bottom: 5px;
+}
+
+span {
+    font-size: 17px;
+    display: block;
+    
+}
+
+button {
+    font-size: 17px;
+    background-color: rgb(19, 125, 232);
+    color: white;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 170px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(19, 126, 232, 0.74);
+    
+}
+
+.pai:hover {
+    transform: translateY(-5px); /**/ 
+}
