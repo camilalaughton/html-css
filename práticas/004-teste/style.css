@@ -4,23 +4,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+
 }
 
 :root {
-    --nav: 
+    --fundo-principal-claro: #F5F2EA;
+    --topo-claro: #182626; 
+    --texto-claro: white;
+    --fundo-principal-escuro: 
+    
+    --topo-escuro: 
+    --fundo-card-claro: 
+    --fundo-card-escuro:  
+    --texto-escuro: 
+    --botao-claro: 
+    --botao-escuro:
 }
 
 
 body{
     font-family: 'Inter', Arial, Helvetica, sans-serif;  
     font-size: 10px;
-    text-align: center;
     min-height: 100vh; /*sem essa altura total da janela voce não consegue alinhar os elementos no centro da tela, por exemplo*/ 
+    
+    background-color: var(--fundo-principal);
+}
 
-    background-color: white;
+
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 50px;
+
+    background-color: var(--topo-claro);
+}
+
+nav > a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--texto-claro);
+    font-size: 1.5em;
+}
+
+i {
+   font-size: 24px;
 }
 
 /* O main agora controla o layout dos cards */
@@ -30,6 +59,12 @@ main {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+
+     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 article.card {
@@ -78,6 +113,8 @@ button {
     border-radius: 5px;
     font-weight: bold;
 }
+
+
 
 button:hover {
     cursor: pointer;
